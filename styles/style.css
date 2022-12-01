@@ -185,6 +185,63 @@ body {
 }
 
 /*Указываем, что стили для второго элемента в car-item-point (в html это div)*/
-.car-item-point > div:nth-child(2) {
+.car-item-point>div:nth-child(2) {
 	font-weight: bold;
+}
+
+.price {
+	/*Позволяет картинке на меньших экранах просто скрыться (часть просто обрезается)*/
+	overflow: hidden;
+}
+
+.price .container {
+	/*Нужно для того, чтобы смещать картинку относительно нашего текущего контейнера*/
+	position: relative;
+	padding-bottom: 121px;
+}
+
+.price .sub-title {
+	margin-bottom: 20px;
+}
+
+.price-text {
+	font-size: 16px;
+	line-height: 130%;
+	color: #5D5D5F;
+	margin-bottom: 60px;
+}
+
+.price-form {
+	max-width: 344px;
+}
+
+.price-input {
+	padding: 22px 18px;
+	width: 344px;
+	height: 65px;
+	background: #FFFFFF;
+	border: 1px solid #5D5D5F;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #000000;
+	/*Убираем специальную обводку браузером при работе с этим элементом*/
+	outline: none;
+	margin-bottom: 15px;
+}
+
+
+
+/*Задали цвет для placeholder*/
+.price-input::placeholder {
+	color: #5D5D5F;
+}
+
+.price .button {
+	width: 100%;
+}
+
+.price-image {
+	position: absolute;
+	bottom: 0;
+	left: 401px;
 }
