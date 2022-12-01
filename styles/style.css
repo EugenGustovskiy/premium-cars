@@ -65,3 +65,54 @@ body {
 .menu-item a:hover {
 	border-bottom: 2px solid black;
 }
+
+.main {
+	background-image: url(../images/background.png);
+	background-position: center;
+	background-size: cover;
+	padding: 104px 0 154px 0;
+}
+
+.main-info {
+	max-width: 855px;
+}
+
+.main-title {
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 110%;
+	color: #030305;
+	margin-bottom: 40px;
+}
+
+.main-text {
+	font-size: 16px;
+	line-height: 130%;
+	color: #030305;
+	margin-bottom: 40px;
+	max-width: 502px;
+}
+
+.button {
+	padding: 20px;
+	width: 334px;
+	height: 64px;
+	background: #030305;
+	/*Убираем стандартную рамку для кнопки (некоторые браузеры ее вставляют)*/
+	border: 0;
+	/*Делаем тк, чтобы наши отступы входили в размеры*/
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	/*Цвет при наведении на кнопку меняется плавно*/
+	transition: background-color .5s;
+}
+
+.button:hover {
+	cursor: pointer;
+	background: #575757;
+}
